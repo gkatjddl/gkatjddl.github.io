@@ -1,0 +1,56 @@
+div{
+  border: 1px solid yellow;
+  width:400px ;
+
+}
+.nav li{
+  display: inline-block;
+  width: 60px;
+  background-color: violet;
+  padding: 10px;
+  border-radius: 20px;
+  
+}
+a,
+a:link,
+a:visited,
+a:active,
+a:focus
+{
+  text-decoration: none;
+  color: blue;
+  font-size: 16px;
+}
+a:hover
+{
+  color: green;
+}
+body{
+  margin: 0;
+}
+div, textarea{
+  border: 1px solid yellowgreen;
+
+}
+.input-class{
+  width: 200px;
+}
+.input-class input{
+
+  box-sizing: border-box;
+}
+.input-class input[type=text],
+.input-class input[type=number]
+{
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid purple;
+}
+.my-table{
+  border-collapse: collapse;
+}
+.my-table tr td{
+  border: 1px solid black;
+  width: 200px;
+}
