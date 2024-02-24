@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>장바구니사이트 연습</title>
+<style>
+body{margin: 0;}
+div.component-table{
+  background: skyblue;
+  padding: 30px;
+  width: 650px;
+  margin: auto;
+}
+.cart-table img{
+  width:70px;
+  height: 70px;
+}
+.cart-table{
+  border-collapse:collapse;
+  border: 1px solid black;
+}
+.cart-table td{
+
+  padding: 20px;
+  border-bottom: 1px solid black;
+}
+
+.component-table input[type="number"]{
+  width: 100px;
+}
+button:hover{
+  color: red;
+}
+.subButton:checked + label {
+      background-color: lightblue;
+    }
+</style>
+</head>
+<body>
+  <div class="component-table">
+  <table class="cart-table">
+    <tr>
+      <td><input type="checkbox" id="mainButton" class="mainButton" onclick="toggleAllButtons()"></td>
+      <td>상품정보</td>
+      <td>수량</td>
+      <td>가격(개별)</td>
+      <td>구매가</td>
+      <td>삭제</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" id="subButton1" class="subButton"></td>
+      <td><img src="./image/chisai_bird.jpg" alt="..."></td>
+      <td><input type="number" value="0"></td>
+      <td>3000</td>
+      <td>0</td>
+      <td><button>삭제</button></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" id="subButton2" class="subButton"></td>
+      <td><img src="./image/flower.jpg" alt="..."></td>
+      <td><input type="number" value="0"></td>
+      <td>4000</td>
+      <td>0</td>
+      <td><button>삭제</button></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" id="subButton3" class="subButton"></td>
+      <td><img src="./image/bee.jpg" alt="..."></td>
+      <td><input type="number" value="0"></td>
+      <td>4000</td>
+      <td>0</td>
+      <td><button>삭제</button></td>
+    </tr>
+    <tr>
+      <td colspan="5" class="total-td">
+      총 가격:0원
+    </td>
+    </tr>
+  </table>
+  
+  <script>
+    function toggleAllButtons() {
+      var mainButton = document.getElementById('mainButton');
+      var subButtons = document.getElementsByClassName('subButton');
+      
+      // 주 버튼을 클릭하면 모든 부 버튼들의 체크 상태를 주 버튼과 동일하게 만듦
+      for (var i = 0; i < subButtons.length; i++) {
+        subButtons[i].checked = mainButton.checked;
+      }
+    }
+  </script>
+</div>
+</body>
+</html>
