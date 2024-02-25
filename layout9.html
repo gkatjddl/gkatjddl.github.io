@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스타벅스 샘플</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body{
+      margin: 0;
+    }
+    .section-header{
+      width: 100%;
+      background: rgb(246, 245, 239);
+      height: 120px;
+    }
+    .inner-header{
+      width: 1100px;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      padding-left: 15px;
+      align-items: center;
+    }
+    .logo{
+      width: 115px;
+      height: 85px;
+    }
+    .logo img{
+      width: 100%;
+      height: 100%;
+    }
+    .space-nav{
+      height: 100%;
+    }
+    .space-nav li{
+      display: inline-block;
+      
+    }
+    .top-nav{
+      height: 45px;
+      font: size 13px; ;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .top-nav a{
+      
+      color: black;
+      text-decoration: none; 
+      padding-right: 15px;
+      padding-left: 15px;
+      border-right: 1px solid lightgrey ;
+    }
+    .top-nav a:hover{
+      text-decoration: underline;
+    }
+    .low-nav{
+      display: flex;
+      justify-content: flex-end;
+    }
+    .low-nav a{
+      padding: 15px;
+      color: black;
+      text-decoration: none;
+    }
+    .low-nav a:hover{
+      color: green;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="section-header">
+  <div class="inner-header">
+    <div class="logo">
+      <img src="./image/starbucks.PNG">
+    </div>
+    <div class="space-nav">
+      <div class="top-nav">
+        <li><a href="#">sign in</a><li>
+        <li><a href="#">My Starbucks</a><li>
+        <li><a href="#">Customer Survice & Ideas</a><li>
+        <li><a href="#">Find a Store</a><li>
+        <li><button><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a><li>
+        </button></div>
+      <div class="low-nav">
+        <li><a href="#">COFFE</a></li>
+        <li><a href="#">MENU</a></li>
+        <li><a href="#">STORE</a></li>
+        <li><a href="#">RESTPONSIBILITY</a></li>
+        <li><a href="#">STARBUKS REWARDS</a></li>
+        <li><a href="#">CORPORATE</a></li>
+        <li><a href="#">WHAT'S NEW</a></li>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
