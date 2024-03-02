@@ -68,6 +68,41 @@
       color: green;
       text-decoration: underline;
     }
+    .section-one{
+      background-image: url(./image/sectoin1background.PNG);
+      width: 100%;
+      height: 32vw; /*가로 크기의 32퍼센트*/
+      background-repeat: no-repeat;
+      background-size:100% auto;
+      position: d;
+    }
+    .section-one .text-img{
+      top: 25%;
+      position: absolute;
+      left: 18%;
+      width: 20%;
+    }
+    .section-one .detail-btn{
+      position: absolute;
+      left: 24%;
+      top: 53%;
+      width: 150px;
+      background: transparent;
+      border: 2px solid darkgreen;
+      border-radius: 5px;
+      padding: 10px;
+      transition: all 0.5s;
+    }
+    .section-one .detail-btn:hover{
+      background: darkgreen;
+      color: white;
+      text-decoration: underline;
+    }
+    .chamomile-tea{
+      position: absolute;
+      top: 38%;
+      left: 67%;
+    }
   </style>
 </head>
 <body>
@@ -95,6 +130,14 @@
       </div>
     </div>
   </div>
+  </div>
+  <div class="section-one">
+    <img src="./image/section1_text.PNG" alt="" class="text-img">
+    <button class="detail-btn">자세히 보기</button>
+    <img src="./image/white_taro_milk.PNG" alt="" class="milk-tea">
+    <img src="./image/refreshing_grapefurit_chamomile_tea.PNG" alt="" class="chamomile-tea">
+    <img src="./image/espresso_cookie_latte.PNG" alt="" class="cookie-latte">
+    
   </div>
 </body>
 </html>
